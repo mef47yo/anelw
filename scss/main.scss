@@ -1,4 +1,9 @@
 
-@use "./partials/reset";
-@use "./partials/general";
-@use "./partials/dibujo";
+@use "./partials/base/reset";
+@use "./partials/base/imagen";
+@use "./partials/utilities/variables";
+@use "./partials/utilities/mixins";
+@use "./partials/components/general";
+@use "./partials/components/button";
+@use "./partials/components/cards";
+

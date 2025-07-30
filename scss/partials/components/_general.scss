@@ -1,4 +1,11 @@
-h1 :hover {transform: scale(1.05);
+
+@use "../utilities/variables";
+@import "../utilities/mixins";
+.navbar-nav .nav-link:hover { background-color: rgb(217, 40, 40); color: white;
+     border-radius: 6px;  }
+
+
+h1 {
     color: black;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -34,45 +41,16 @@ p {
     margin-top: 20px;
 }
 
-.card-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-}
 
-.btn-card {
-    background-color: rgb(123, 87, 44);
 
-    border-radius: 6px;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
 
 body {
     background-color: rgb(123, 87, 44);
 }
 
-.btn-anel {
-    display: inline-block;
-    font-size: 20;
-    text-decoration: none;
-    color: white;
-    background-color: rgb(96, 72, 42);
-    padding: 10px 20px;
-    border: 1px solid white;
-    border-radius: 6px;
 
 
-}
+
 
 form {
     display: flex;
@@ -93,7 +71,7 @@ form {
     font-style: oblique;
     text-decoration: none;
     color: black;
-    background-color: rgb(181, 175, 167);
+    background-image:linear-gradient(to right, white,black);
     padding: 10px 20px;
     border: 1px solid white;
     border-radius: 8px;

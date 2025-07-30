@@ -1,0 +1,15 @@
+
+@use "../utilities/variables";
+@import "../utilities/mixins";
+.btn {
+    display: inline-block;
+    font-size: 20;
+    text-decoration: none;
+    color: rgb(218, 118, 118);
+    background-color: rgb(96, 72, 42);
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+.btn-anel {
+@extend .btn;}

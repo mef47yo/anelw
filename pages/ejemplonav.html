@@ -69,7 +69,49 @@
 
   }* /
 
+<div class="mb-4">
+  <label for="giftSelect" class="form-label">Elegí una Gift Card:</label>
+  <select class="form-select" id="giftSelect" required>
+    <option selected disabled value="">Elegí una Gift Card</option>
+    <option value="Cumpleaños">Cumpleaños</option>
+    <option value="Amor">Amor</option>
+    <option value="Gracias">Gracias</option>
+  </select>
+</div>
+<div class="mb-4">
+  <label for="giftMessage" class="form-label">Mensaje personalizado:</label>
+  <textarea class="form-control" id="giftMessage" rows="3" placeholder="Escribe tu mensaje aquí..." required></textarea>
+</div>
+<button class="btn btn-success" id="sendWhatsapp">Enviar por WhatsApp</button>
 
+<script>
+  document.getElementById('sendWhatsapp').addEventListener('click', function() {
+    const gift = document.getElementById('giftSelect').value;
+    const message = document.getElementById('giftMessage').value.trim();
+    if (!gift || !message) {
+      alert('Por favor, elegí una Gift Card y escribí un mensaje.');
+      return;
+    }
+    const text = `¡Hola! Quiero regalar una Gift Card de "${gift}". Mensaje: ${message}`;
+    const phone = '549XXXXXXXXXX'; // Reemplaza por tu número de WhatsApp, ej: 5491123456789
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+  });
+</script>
+
+---
+  <div class="form-gift">
+    <select class="form-gift" id="floatingSelect" aria-label="Floating label select example">
+      <option selected>Elegi una Gift Card</option>
+      <Div>
+        <option value="1">Cumpleaños </option>
+      </Div>
+
+      <option value="2">Amor</option>
+      <option value="3">Gracias</option>
+    </select>
+    <label for="floatingSelect"></label>
+  </div>
 
   <footer>
     Copyright 2025 Lenceria <i>Anel</i> . Todos los derechos reservados.
