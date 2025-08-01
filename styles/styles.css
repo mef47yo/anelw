@@ -6,7 +6,7 @@
 
 @media (max-width: 430px) {
   .card-container {
-    flex-direction: column;
+    flex-direction: wrap;
   }
 }
 .logo {
@@ -28,7 +28,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: rgb(217, 40, 40);
+  background-color: rgb(34, 33, 33);
   color: white;
   border-radius: 6px;
 }
@@ -67,7 +67,7 @@ p {
 }
 
 body {
-  background-color: rgb(123, 87, 44);
+  background-color: rgb(242, 233, 233);
 }
 
 form {
@@ -101,7 +101,7 @@ form {
   display: inline-block;
   font-size: 20;
   text-decoration: none;
-  color: rgb(218, 118, 118);
+  color: rgb(120, 110, 110);
   background-color: rgb(96, 72, 42);
   padding: 10px 20px;
   border: 1px solid white;
@@ -121,7 +121,6 @@ form {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: calc(33.333% - 40px); /* Three cards per row with gap */
   box-sizing: border-box;
 }
 

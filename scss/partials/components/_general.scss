@@ -1,7 +1,7 @@
 
 @use "../utilities/variables";
 @import "../utilities/mixins";
-.navbar-nav .nav-link:hover { background-color: rgb(217, 40, 40); color: white;
+.navbar-nav .nav-link:hover { background-color: rgb(34, 33, 33); color: white;
      border-radius: 6px;  }
 
 
@@ -45,7 +45,8 @@ p {
 
 
 body {
-    background-color: rgb(123, 87, 44);
+    background-color: rgb(242, 233, 233);
+    
 }
 
 
