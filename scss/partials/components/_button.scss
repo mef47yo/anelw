@@ -2,6 +2,7 @@
 @use "../utilities/variables";
 @import "../utilities/mixins";
 .btn {
+    
     display: inline-block;
     font-size: 20;
     text-decoration: none;
@@ -13,3 +14,10 @@
 }
 .btn-anel {
 @extend .btn;}
+.sorteo {
+  @include boton-personalizado(white, rgb(96, 72, 42), 6px);
+  @include hover-effect(variables.$hovercolor);
+}
+.form-select{
+  @include boton-personalizado(white, rgb(96, 72, 42), 6px);
+  @include hover-effect(variables.$hovercolor);}
