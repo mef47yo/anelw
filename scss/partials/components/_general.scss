@@ -127,3 +127,8 @@ form {
     
 
 }
+@media (max-width: 430px) {
+  .card-container {
+    flex-direction: column;
+  }
+}
