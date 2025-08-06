@@ -33,6 +33,13 @@
   margin-left: 200px;
 }
 
+.imagen {
+  display: inline-block;
+  width: 25%;
+  height: 25%;
+  animation-fill-mode: backwards;
+}
+
 .navbar-nav .nav-link:hover {
   background-color: rgb(34, 33, 33);
   color: white;
