@@ -16,8 +16,13 @@
 @extend .btn;}
 .sorteo {
   @include boton-personalizado(white, rgb(96, 72, 42), 6px);
+
+}
+.carrusel {
+  @include boton-personalizado(white, rgb(96, 72, 42), 6px);
   @include hover-effect(variables.$hovercolor);
 }
 .form-select{
   @include boton-personalizado(white, rgb(96, 72, 42), 6px);
   @include hover-effect(variables.$hovercolor);}
+

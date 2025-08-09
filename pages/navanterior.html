@@ -122,6 +122,47 @@
         </div>
       </div>
     </section>
+
+
+
+</section>
+
+    <section>
+        <h2>Comentarios</h2>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="comentario">Comentario:</label><br>
+            <textarea id="comentario" name="comentario" rows="4" cols="40"></textarea><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  }
+   .label { display:flex ;
+    font-size: 20px;
+    color: rgb(120, 110, 110);
+    margin-bottom: 10px;
+    padding: auto;
+    font-weight: bold;
+
+   }
+<!--  -->
+   <div class="container-fluid">
+      <form method="post">
+        <label class="label" for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="name" placeholder="Nombre" required>
+        <label  mail>Email:</label>
+        <input type="email" id="mail" name="email" placeholder="Email" required>
+        <button type="submit" class="btn ">Enviar</button>
+      </form>
+    </div>
   </main>
 
   <footer class="text-center mt-4">
